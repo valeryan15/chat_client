@@ -1,7 +1,7 @@
-import type { TContact } from "shared/model/types"
+import type { TContact } from 'shared/model/types';
 
 export type TChatViewParams = {
-  contactId: string
-}
+  contactId: string;
+};
 
-export type TChatViewResponse = TContact
+export type TChatViewResponse = TContact;

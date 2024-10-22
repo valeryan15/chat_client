@@ -1,12 +1,12 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Root } from "../ui/Root"
-import { ErrorPage } from "../ui/ErrorRoute/ErrorPage"
-import { ChatView, ChatEmpty, ChatError } from "pages/ChatView"
-import { chatViewLoader } from "pages/ChatView/api/chat-view-loader"
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Root } from '../ui/Root';
+import { ErrorPage } from '../ui/ErrorRoute/ErrorPage';
+import { ChatView, ChatEmpty, ChatError } from 'pages/ChatView';
+import { chatViewLoader } from 'pages/ChatView/api/chat-view-loader';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -15,15 +15,15 @@ const router = createBrowserRouter([
         element: <ChatEmpty />,
       },
       {
-        path: "/chat/:contactId",
+        path: '/chat/:contactId',
         loader: chatViewLoader,
         element: <ChatView />,
         errorElement: <ChatError />,
       },
     ],
   },
-])
+]);
 
 export const AppRouter = () => {
-  return <RouterProvider router={router} />
-}
+  return <RouterProvider router={router} />;
+};

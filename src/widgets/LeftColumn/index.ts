@@ -1,1 +1,1 @@
-export { LeftColumn } from "./ui/LeftColumn"
+export { LeftColumn } from './ui/LeftColumn';

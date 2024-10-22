@@ -1,3 +1,3 @@
 export const ChatError = () => {
-  return <div>ChatError</div>
-}
+  return <div>ChatError</div>;
+};

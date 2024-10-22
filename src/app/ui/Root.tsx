@@ -1,6 +1,6 @@
-import { LeftColumn } from "../../widgets/LeftColumn"
-import { Outlet } from "react-router-dom"
-import styles from "./Root.module.css"
+import { LeftColumn } from '../../widgets/LeftColumn';
+import { Outlet } from 'react-router-dom';
+import styles from './Root.module.css';
 
 export function Root() {
   return (
@@ -12,5 +12,5 @@ export function Root() {
         <Outlet />
       </div>
     </div>
-  )
+  );
 }
