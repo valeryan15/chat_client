@@ -6,7 +6,7 @@ import { chatViewLoader } from "pages/ChatView/api/chat-view-loader"
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -15,13 +15,13 @@ const router = createBrowserRouter([
         element: <ChatEmpty />,
       },
       {
-        path: '/chat/:contactId',
+        path: "/chat/:contactId",
         loader: chatViewLoader,
         element: <ChatView />,
-        errorElement: <ChatError />
-      }
-    ]
-  }
+        errorElement: <ChatError />,
+      },
+    ],
+  },
 ])
 
 export const AppRouter = () => {

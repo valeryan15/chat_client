@@ -8,7 +8,9 @@ interface Props {
 const Contacts: React.FC<Props> = ({ contacts }) => {
   return (
     <div>
-      {contacts.map((contact) => (<Contact key={contact.id} contact={contact} />))}
+      {contacts.map(contact => (
+        <Contact key={contact.id} contact={contact} />
+      ))}
     </div>
   )
 }

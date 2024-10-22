@@ -5,7 +5,7 @@ export function generateContacts(count: number = 1): TContact[] {
   for (let i = 0; i < count; i++) {
     contacts.push({
       id: `id-${i}`,
-      name: `test-name-${i}`
+      name: `test-name-${i}`,
     })
   }
   return contacts
