@@ -1,7 +1,7 @@
 import { AppRouter } from '../routers/AppRouter';
 
-const App = () => {
+const Root = () => {
   return <AppRouter />;
 };
 
-export default App;
+export default Root;
