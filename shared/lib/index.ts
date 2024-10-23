@@ -1,0 +1,1 @@
+export { generateContacts } from './generateContacts';

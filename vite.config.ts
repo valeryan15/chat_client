@@ -11,22 +11,22 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: 'src/setupTests',
+    setupFiles: 'app/test/setupTests',
     mockReset: true,
   },
   resolve: {
     alias: [
       {
-        find: 'entities',
-        replacement: fileURLToPath(new URL('./src/entities', import.meta.url)),
+        find: '@app',
+        replacement: fileURLToPath(new URL('./app', import.meta.url)),
       },
       {
-        find: 'pages',
-        replacement: fileURLToPath(new URL('./src/pages', import.meta.url)),
+        find: '@pages',
+        replacement: fileURLToPath(new URL('./pages', import.meta.url)),
       },
       {
-        find: 'shared',
-        replacement: fileURLToPath(new URL('./src/shared', import.meta.url)),
+        find: '@shared',
+        replacement: fileURLToPath(new URL('./shared', import.meta.url)),
       },
     ],
   },
